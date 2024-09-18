@@ -16,3 +16,9 @@ This repository contains a binary classification model built using the VGG16 arc
 - **Functional API**: Flexible model creation with TensorFlow/Keras Functional API.
 - **Binary Classification**: Designed for tasks requiring two output classes.
 
+#### Training Details:
+- The model was trained for 10 epochs.
+- Initial performance showed an accuracy of **78.92%** and a loss of **0.5467** in the first epoch.
+- The final epoch achieved a training accuracy of **90.62%**, validation accuracy of **96.15%**, and validation loss of **0.0865**.
+- Training encountered a warning regarding input data running out. This might require revisiting the dataset preparation process, possibly by applying the `.repeat()` function for sufficient data batches per epoch.
+
